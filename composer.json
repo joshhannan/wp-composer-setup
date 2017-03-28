@@ -1,0 +1,64 @@
+{
+	"name": "wp/wordpress-setup",
+	"description" : "no description yet",
+	"repositories": [
+		{
+			"type":"composer",
+			"url":"https://wpackagist.org"
+		},
+		{
+			"type" : "package",
+			"package" : {
+				"name" : "wordpress-boilerplate-theme",
+				"type" : "wordpress-theme",
+				"version" : "0.1.0",
+				"source" : {
+					"url" : "https://github.com/joshhannan/responsive-wordpress-boilerplate.git",
+					"type" : "git",
+					"reference" : "master"
+				}
+			}
+		},
+		{
+			"type" : "package",
+			"package" : {
+				"name" : "advanced-custom-fields",
+				"type" : "wordpress-plugin",
+				"version" : "5.5.10",
+				"source" : {
+					"url" : "https://github.com/wp-premium/advanced-custom-fields-pro.git",
+					"type" : "git",
+					"reference" : "master"
+				}
+			}
+		},
+		{
+			"type" : "package",
+			"package" : {
+				"name" : "ip-framework",
+				"type" : "wordpress-plugin",
+				"version" : "0.3",
+				"source" : {
+					"url" : "https://github.com/inverse-paradox/WordPress-Framework.git",
+					"type" : "git",
+					"reference" : "master"
+				}
+			}
+		}
+	],
+	"require": {
+		"composer/installers": "dev-master",
+		"johnpbloch/wordpress-core-installer": "~0.2",
+		"johnpbloch/wordpress-core": "dev-master",
+		"wordpress-boilerplate-theme" : "0.1.0",
+		"advanced-custom-fields" : "5.5.10",
+		"ip-framework" : "0.3"
+	},
+	"extra" : {
+		"wordpress-install-dir" : "public_html",
+		"installer-paths" : {
+			"public_html/wp-content/themes/{$name}/": ["wordpress-boilerplate-theme"],
+			"public_html/wp-content/plugins/{$name}/": ["advanced-custom-fields", "ip-framework"]
+		}
+	}
+}
