@@ -4,5 +4,6 @@ Thumbs.db
 node_modules
 
 #composer ignores
+composer.phar
 /public_html/**
 /vendor/**
