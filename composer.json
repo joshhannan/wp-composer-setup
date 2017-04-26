@@ -22,19 +22,6 @@
 		{
 			"type" : "package",
 			"package" : {
-				"name" : "advanced-custom-fields",
-				"type" : "wordpress-plugin",
-				"version" : "5.5.10",
-				"source" : {
-					"url" : "https://github.com/wp-premium/advanced-custom-fields-pro.git",
-					"type" : "git",
-					"reference" : "master"
-				}
-			}
-		},
-		{
-			"type" : "package",
-			"package" : {
 				"name" : "ip-framework",
 				"type" : "wordpress-plugin",
 				"version" : "0.3",
@@ -51,14 +38,13 @@
 		"johnpbloch/wordpress-core-installer": "~0.2",
 		"johnpbloch/wordpress-core": "dev-master",
 		"wordpress-boilerplate-theme" : "0.1.0",
-		"advanced-custom-fields" : "5.5.10",
 		"ip-framework" : "0.3"
 	},
 	"extra" : {
 		"wordpress-install-dir" : "public_html",
 		"installer-paths" : {
 			"public_html/wp-content/themes/{$name}/": ["wordpress-boilerplate-theme"],
-			"public_html/wp-content/plugins/{$name}/": ["advanced-custom-fields", "ip-framework"]
+			"public_html/{$name}/": ["ip-framework"]
 		}
 	}
 }

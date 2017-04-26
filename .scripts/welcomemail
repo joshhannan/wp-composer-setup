@@ -1,0 +1,12 @@
+Date: Mon Jul 18 12:00:00 2016
+To: vagrant@localhost
+Subject: Welcome to Vagrant Email Capture!
+From: vagrant@localhost
+Welcome to the Email Capture system for your Vagrant development environment!
+
+All email "sent" by your development environment will be re-routed to "vagrant@localhost" and arrive in this inbox. This allows you to easily test any email-based functionality without worrying about sending emails to actual recipients. This is great for email confirmations, order confirmations, etc.
+
+If you've properly set up your host file per the instructions you received the first time you booted up this environment, you should always be able to access this "webmail" interface by visiting:
+http://vagrant.local/webmail
+
+If you have questions or difficulties, check with your supervisor.

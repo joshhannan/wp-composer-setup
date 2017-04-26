@@ -7,3 +7,8 @@ node_modules
 composer.phar
 /public_html/**
 /vendor/**
+
+#vagrant ignores
+.configs
+.vagrant
+sql/*

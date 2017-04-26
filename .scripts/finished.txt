@@ -1,0 +1,60 @@
+=========================================================================
+= WELCOME TO INVERSE PARADOX'S MAGENTO VAGRANT ENVIRONMENT EXTRAVAGANZA =
+=========================================================================
+
+Your Vagrant environment is now set up and ready to use, but you will
+need to modify your system's host file in order to access it correctly.
+Instructions on where and how to do this are beyond the scope of this
+document. If you need help, please ask a coworker (or Google).
+
+Your Vagrant server is running under a local subnet only accessible to
+this computer. The IP address of the server is:
+
+10.10.10.10
+
+You will need to add a host file entry similar to one of the following
+before you can access the server through your browser:
+
+10.10.10.10 vagrant.local
+10.10.10.10 somewebsite.local
+
+Once this is done, you can access the Apache server by entering one of
+the following in your browser:
+
+http://vagrant.local
+http://somewebsite.local
+
+The Vagrant server comes with the latest build of phpMyAdmin available
+for MySQL database management and access. You can access phpMyAdmin by
+navigating to the /phpmyadmin path on any domain which is set up to
+point to your Vagrant server. In the examples above, this would be:
+
+http://vagrant.local/phpmyadmin
+http://somewebsite.local/phpmyadmin
+
+There is already a MySQL database set up for Magento, and if you had
+the file {vagrant_root}/sql/latest.sql in place when you started this
+environment, its contents are now contained in the database:
+
+Database: magento
+Username: magento
+Password: <none>
+
+You can initiate an SSH connection to the Vagrant environment using any
+SSH client of your choice:
+
+Hostname: 10.10.10.10
+Username: vagrant
+Password: vagrant
+
+All emails sent out from within your Vagrant environment are captured
+and relayed into a local email server which can be accessed via a
+convenient webmail application. If you've properly set up your host
+file per the instructions above, you should be able to access this
+webmail interface using the following:
+
+URL: http://vagrant.local/webmail
+Username: vagrant
+Password: vagrant
+
+Happy Devving!
