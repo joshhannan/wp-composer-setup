@@ -53,7 +53,7 @@ fi
 VHOST=$(cat <<EOF
 <VirtualHost *:80>
     DocumentRoot "/var/www"
-    ServerName dietz.dev
+    ServerName staging.dev
     ServerName 15.15.15.15
 
     ErrorLog "/vagrant/.vagrant/logs/error.log"

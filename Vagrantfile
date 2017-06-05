@@ -35,10 +35,10 @@ Vagrant.configure("2") do |config|
     config.hostmanager.manage_host = true
     config.hostmanager.ignore_private_ip = false
     config.hostmanager.include_offline = true
-    config.vm.define 'dietz' do |node|
-        node.vm.hostname = 'dietz'
+    config.vm.define 'staging' do |node|
+        node.vm.hostname = 'staging'
         node.vm.network :private_network, ip: '15.15.15.15'
-        node.hostmanager.aliases = %w(dietz.dev)
+        node.hostmanager.aliases = %w(staging.dev)
     end
 
 end
